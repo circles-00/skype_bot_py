@@ -1,1 +1,1 @@
-web: gunicorn
+web: gunicorn skype_bot_py.wsgi
