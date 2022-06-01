@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-yi0@3ka-#1pu-^haw#28pc^vc+h4j0jj=byo!#a_l+^@5za#*3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'skype-bot-py.herokuapp.com'
+]
 
 
 # Application definition
