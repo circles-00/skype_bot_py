@@ -1,3 +1,5 @@
+import os
+
 from django.shortcuts import render
 
 # Create your views here.
@@ -12,7 +14,7 @@ import environ
 env = environ.Env()
 environ.Env.read_env()
 
-skype_service = SkypeService(env('USERNAME'), env('PASSWORD'))
+skype_service = SkypeService(os.environ.get('USERNAME'), os.environ.get('PASSWORD'))
 
 
 @api_view(['GET', 'POST'])

@@ -1,3 +1,5 @@
+import os
+
 from skpy import Skype
 import environ
 
@@ -18,5 +20,5 @@ class SkypeService:
         #     else:
         #         break
 
-        ch = sk.chats[env('BISTRO_CHAT')]
+        ch = sk.chats[os.environ.get('BISTRO_CHAT')]
         ch.sendMsg(message)
